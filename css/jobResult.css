@@ -1,0 +1,179 @@
+.searchedResult {
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  padding: 50px 25px;
+  background: url("https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.job-information {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.company-logo {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(246, 248, 255);
+  border: 5px solid rgb(245, 231, 231);
+  border-radius: 10px;
+  position: relative;
+  top: -90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.job-name {
+  margin-bottom: 20px;
+}
+.company-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.company-name a {
+  text-decoration: none;
+}
+
+.job-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.job-highlights div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-highlights .location {
+  display: flex;
+  justify-content: space-evenly;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
+  border-left: 3px solid whitesmoke;
+  border-right: 2px solid whitesmoke;
+}
+.job-highlights .type {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+  border-right: 2px solid whitesmoke;
+}
+
+.job-highlights .posted-date {
+  display: flex;
+  justify-content: space-evenly;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+  border-right: 3px solid whitesmoke;
+}
+
+.job-overview,
+.job-responsibilties {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.job-overview h3,
+.job-responsibilties h3 {
+  margin-bottom: 10px;
+}
+.job-overview p,
+.job-responsibilties p {
+  line-height: 1.5rem;
+}
+
+.job-responsibilties ul {
+  margin: 20px 0;
+  line-height: 1.8rem;
+}
+.job-application {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.job-application div {
+  width: 150px;
+  padding: 10px 16px;
+  text-align: center;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  background-color: #3060ff;
+  cursor: pointer;
+  transition: all 250ms ease-in-out 0s;
+}
+
+.job-application div a {
+  color: white;
+  text-decoration: none;
+}
+
+.job-application div:hover {
+  background-color: #5a81ff;
+}
+
+@media screen and (max-width: 1300px) {
+  .job-information {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .job-highlights {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 150px;
+  }
+  .job-highlights div {
+    padding: 20px;
+  }
+
+  .job-highlights .location {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top: 3px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+    border-right: 3px solid whitesmoke;
+  }
+  .job-highlights .type {
+    border-top: 2px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+    border-right: 3px solid whitesmoke;
+  }
+
+  .job-highlights .posted-date {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+    border-right: 3px solid whitesmoke;
+  }
+}
